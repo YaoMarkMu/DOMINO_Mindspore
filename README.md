@@ -15,7 +15,9 @@ This paper addresses the multi-confounded challenge by decomposed mutual informa
 Install required packages with below commands:
 
 ```
-conda create -n domino python=3.6
+conda create -c conda-forge -n domino_mindspore python=3.7.5 -y
+conda activate domino_mindspore
+conda install mindspore-gpu=1.8.1 cudatoolkit=11.1 -c mindspore -c conda-forge
 pip install -r requirements.txt
 ```
 
