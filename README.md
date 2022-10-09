@@ -14,11 +14,11 @@ This paper addresses the multi-confounded challenge by decomposed mutual informa
 
 Introduction to Mindspore
 
-```
+
 MindSpore is a deep learning framework in all scenarios, aiming to achieve easy development, efficient execution, and all-scenario coverage.
 
 Easy development features user-friendly APIs and low debugging difficulty. Efficient execution is reflected in computing, data preprocessing, and distributed training. All-scenario coverage means that the framework supports cloud, edge, and device scenarios.
-```
+
 
 Install required packages with below commands:
 
