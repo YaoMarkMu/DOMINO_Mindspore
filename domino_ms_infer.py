@@ -85,9 +85,18 @@ class Domino_infer(nn.Cell):
         return out
 
 
-def domino_policy(trajectory,checkpoint='path/to/checkpoint_file'):
-    # 加载模型参数
-    param_dict = load_checkpoint(checkpoint)
+def domino_policy(trajectory,checkpoint=None):
     model = Domino_infer()
-    load_param_into_net(model, param_dict)
+    if checkpoint is not None:
+        # 加载模型参数
+        param_dict = load_checkpoint(checkpoint)
+        load_param_into_net(model, param_dict)
+    else:
+        pass
     return model(trajectory)
+
+if __name__=="main":
+    input=ms.Tensor(64,20)
+    output=domino_policy(input)
+    print(output.shape)
+

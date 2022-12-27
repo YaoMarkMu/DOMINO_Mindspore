@@ -28,10 +28,15 @@ conda install mindspore-gpu=1.8.1 cudatoolkit=11.1 -c mindspore -c conda-forge
 pip install -r requirements.txt
 ```
 
-Train and evaluate agents:
+Train the agents:
 
 ```
 python -m run_scripts.run_domino --dataset [hopper,ant,halfcheetah,cripple_ant,cripple_halfcheetah] --normalize_flag
 ```
 
 
+Test the agents:
+
+```
+python domino_ms_infer.py
+```
